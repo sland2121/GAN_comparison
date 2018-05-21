@@ -32,8 +32,11 @@ This code was structured after the code here:
 We referred to and used code from the following implementations for implementing the GAN algorithms and metrics:
 
 -AdaGAN: https://github.com/tolstikhin/adagan
+
 -WGAN: https://github.com/cameronfabbri/Wasserstein-GAN-Tensorflow
+
 -VEEGAN: https://github.com/akashgit/VEEGAN
+
 -Unrolled GAN: https://github.com/tolstikhin/adagan, https://github.com/poolio/unrolled_gan
 
 
