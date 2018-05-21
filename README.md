@@ -2,10 +2,7 @@
 
 # Contributors:
 
-Anastasiya Belyaeva
-Sayeri Lala
-Molei Liu
-Maha Shady
+Anastasiya Belyaeva, Sayeri Lala, Molei Liu, Maha Shady
 
 
 # Goal:
@@ -32,7 +29,7 @@ See Metrics.py for example on computing metrics for a GAN and dataset.
 This code was structured after the code here:
 -https://github.com/tolstikhin/adagan
 
-We referred to the following implementations for implementing the GAN algorithms and metrics:
+We referred to and used code from the following implementations for implementing the GAN algorithms and metrics:
 
 -AdaGAN: https://github.com/tolstikhin/adagan
 -WGAN: https://github.com/cameronfabbri/Wasserstein-GAN-Tensorflow
