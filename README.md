@@ -2,10 +2,10 @@
 
 # Contributors:
 
-# Anastasiya Belyaeva
-# Sayeri Lala
-# Molei Liu
-# Maha Shady
+Anastasiya Belyaeva
+Sayeri Lala
+Molei Liu
+Maha Shady
 
 
 # Goal:
