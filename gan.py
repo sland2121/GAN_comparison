@@ -102,8 +102,6 @@ class GAN(object):
         # Finishing the session
         self._session.close()
         
-
-
         
     # implements the generator architecture described in the 6.883 report based on the dataset
     def _generator(self,_input,is_training_ph,prefix='GENERATOR'):
@@ -332,7 +330,8 @@ class GAN(object):
                 for _iter in range(self._opts['g_steps']):
                     _ = self._session.run(
                         self._g_optim,
-                        feed_dict={self._noise_ph: batch_noise,
+                        feed_dict={self._real_points_ph: batch_images,
+                                   self._noise_ph: batch_noise,
                                    self._is_training_ph: True})
                 counter += 1
 
@@ -436,9 +435,8 @@ class VEEGAN(GAN):
                                               1 * tf.ones(data_shape)))
         q_z = self._reconstructor(real_points_ph)
         
-
-        log_d_posterior = self._discriminator(real_points_ph, is_training_ph)
-        log_d_prior = self._discriminator(p_g, is_training_ph,reuse=True)
+        log_d_prior = self._discriminator(p_g, is_training_ph)
+        log_d_posterior = self._discriminator(real_points_ph, is_training_ph,reuse=True)
         
         disc_loss = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(logits=log_d_posterior, labels=tf.ones_like(log_d_posterior)) 
                                    + tf.nn.sigmoid_cross_entropy_with_logits(logits=log_d_prior, labels=tf.zeros_like(log_d_prior)))

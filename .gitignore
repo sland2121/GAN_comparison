@@ -1,4 +1,5 @@
 *.pyc
+*.zip
 results_small_grid/
 results_small_hd/
 results_small_mnist/
