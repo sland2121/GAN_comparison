@@ -1,0 +1,7 @@
+*.pyc
+results_small_grid/
+results_small_hd/
+results_small_mnist/
+results_small_ring/
+MNIST-data/
+synthetic_datasets/
