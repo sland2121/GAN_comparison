@@ -14,15 +14,14 @@ Command to train and sample a GAN:
 
 	python run.py <INSERT DATASET_NAME i.e., 2d_ring, 2d_grid, hd, mnist> <INSERT GAN NAME i.e., AdaGAN, WGAN, UnrolledGAN, VEEGAN>
 
+
 # Datasets:
--zip files of the synthetic and real datasets are available at the following links:
+Zip files of the synthetic and real datasets are available at the following links:
 
 -synthetic: https://www.dropbox.com/s/6enn2v1kfwcw9qv/synthetic_datasets.zip?dl=0
 
 -MNIST: https://www.dropbox.com/s/0hhrn6qldgzv3ef/MNIST-data.zip?dl=0
 
-Metrics:
-See Metrics.py for example on computing metrics for a GAN and dataset.
 
 # Citations:
 
