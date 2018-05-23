@@ -38,6 +38,8 @@ We referred to and used code from the following implementations for implementing
 
 -Unrolled GAN: https://github.com/tolstikhin/adagan, https://github.com/poolio/unrolled_gan
 
+-Birthday paradox metric: https://github.com/PrincetonML/GANs-Diversity
+
 
 
 
