@@ -6,7 +6,7 @@ import numpy as np
 import os
 import shutil
 
-
+"""Calculates Wasserstein distance between generated and real samples."""
 
 
 def load_opts_2d_ring(gan_algorithm):
